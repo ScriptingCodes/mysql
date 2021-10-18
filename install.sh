@@ -3,7 +3,6 @@
 apt-get update && apt-get upgrade -y
 
 # Set the Server Timezone to CST
-echo "America/Chicago" > /etc/timezone
 dpkg-reconfigure -f noninteractive tzdata
 
 # Enable Ubuntu Firewall and allow SSH & MySQL Ports
